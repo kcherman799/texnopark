@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins, sans-serif';
+    color: #222;
+}
+
+/* Стили для прикрепление футера к низу сайта */
+#Wrapper {
+	display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+#Page {
+	flex: 1 0 auto;
+}
+
+/* Стили для шабки и фотура */
+header, footer {
+	width: 100%;
+	min-height: 100px;
+}
+
+/* Стили для лого и шабки сайта */
+.navbar-brand img {
+  max-width: 150px !important;
+}
+
+.navbar-nav li {
+  padding-right: 25px !important;
+  width: 120px;
+}
+
+.navbar-link {
+  font-size: 1.1em !important;
+}
+
+ a:hover {
+  text-decoration: underline !important;
+}
+
+/* Стили для контактов в шабки */
+.textContr {
+	width: 365px;
+    margin-left: 50px !important;
+}
+
+.textPhone {	
+    width: 350px;
+    margin-left: 150px !important;
+}
+
+.ContrFootr {
+	margin-left: -200px !important;
+}
+
+/* Стили для контактой формы */
+.contForm {
+	width: 600px;
+	margin: 10px auto;
+}
+
+/* Стили для блока с ошибкой */
+#ErorrBlock {
+	display: none;
+}
+
+/* Стили для слайдера */
+.carousel-item img {
+  	width: 1200px;
+    height: 350px;
+    margin-left: 400px !important;
+}
+
+/* Стили для модального окна */
+.myLabel {
+	text-align: right;
+    margin-right: -10px;
+}
+
+.typeObj {
+	width: 370px;
+    margin-left: 189px;
+}
+
+/* Стили для футора */
+footer {
+  position: relative;  
+  width: 100%;
+  background-color: #3f3f3f;
+  padding-top: 50px;
+  border-top: 2px solid silver;
+  color: white; 
+}
+
+footer h2 {
+	margin-top: -30px;
+}
+
+.adressFooter {
+	margin-top: -20px;
+}
+
+/* Стили для соц сетей */
+.social {
+	max-width: 100px !important;
+    margin-left: -80px;
+}/*
+
+.carousel-item img {
+  margin-left: 100px !important;
+}
+
+
+@media (max-width: 930px) {
+  .carousel-item img {
+    margin-left: 10px !important;
+    background: center center;
+  }
+}
+
+.carousel-caption {
+  text-shadow: 1px 1px 10px #000;
+}
+
+.alert hr {
+  border-top: 2px solid #f0f0f0;
+  width: 35%;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+}
+
+.jumbotron {
+  padding: 1em;
+  border-radius: 0;
+}
+
+.padding {
+  padding-bottom: 2em;
+}*/
+
+/*  Стили для футура */
+

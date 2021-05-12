@@ -1,0 +1,97 @@
+/* Стили для модальнего окна */
+
+.myModal {
+	position: fixed; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgb(0,0,0); /* Задный фон */
+    background-color: rgba(0,0,0,0.4); /* Прозрачность заднего фона */
+    top: -100%;
+    opacity: 0;
+    transition: top 7s, opacity 7s;
+}
+
+.myModal.show { 
+	top: 0px;
+	opacity: 1;
+}
+	    
+.myModal-dialog {
+    position: relative;
+    max-width: 800px;
+    margin: 5% auto 0px auto;
+}
+
+/* Стили для блока с модальным окном */
+.myModal-content {
+	background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    width: 100%; 
+ }
+
+ /* Стили для заголовка */
+.myModal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    -ms-flex-pack: justify;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 24px;
+    padding-left: 45%;
+}
+
+/* Стили для кнопки закритие */
+.myModal-header .close {
+    padding: 1rem 1rem; 
+    margin: -1rem -1rem -1rem auto;
+}
+
+/* Стили для самого модальнего окна */
+.myModal-body {
+   padding: 1rem;
+   text-align: left !important;
+}
+
+/* Стили для футера */
+.myModal-footer {
+	display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Анимация для открытие окна */
+
+@keyframes openModal {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@-webkit-keyframes openModal {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+
+@media (max-width: 576px) {
+	.myModal-dialog {
+		max-width: 500px !important;
+	    margin: 1.75rem auto !important;
+	}
+}
+
+@media (min-width: 750px) {
+	.myModal-lg {
+		max-width: 800px !important;
+		
+	}
+}
+
